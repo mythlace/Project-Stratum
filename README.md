@@ -3,3 +3,12 @@ Project Stratum is project to build an embedded application platform on top of F
 
 ## Hardware Platform
 STM32F769I-DISCO
+
+## Pin configuration
+
+|Pin | Function | Usage |
+| :---: | :--- | :--- |
+| PA9 | USART1_TX | UART Console |
+| PA10 | USART1_RX | UART Console |
+
+\* NOTE: A USB-UART bridge is required to view and interact with UART Console.
