@@ -7,7 +7,19 @@
 
 #include <stdio.h>
 #include <string.h>
+#include "platform/platform_conf.h"
 #include "console_uart.h"
+#include "main.h"
+
+
+/** @brief Handle of UART in use */
+extern UART_HandleTypeDef 		CONSOLE_UART_HANDLE;
+
+/*
+ * @def CONSOLE_UART_BASE
+ * @brief Address of UART handle
+ */
+#define CONSOLE_UART_BASE		(&CONSOLE_UART_HANDLE)
 
 /**
  * @brief Initialize UART console
